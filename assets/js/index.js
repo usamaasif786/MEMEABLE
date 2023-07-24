@@ -1,7 +1,7 @@
 ///////////  When i click on the nav bar link it move smothly //
 
 document.addEventListener("DOMContentLoaded", () => {
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link-js");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
