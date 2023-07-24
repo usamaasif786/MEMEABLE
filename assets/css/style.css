@@ -1,5 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* section home css start here */
 :root {
@@ -8,6 +10,7 @@ body {
   --btnBgColor: #f5be4e;
   --btnColor: #d96211;
   --btnHover: #ffd54b;
+  --darkBrown: #6b0906;
 }
 
 .home {
@@ -288,7 +291,7 @@ body {
   background-color: var(--navBar);
 }
 .title-heading {
-  width: 737px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 60px;
@@ -301,7 +304,7 @@ body {
 }
 .title-heading p {
   color: #fff;
-  font-size: 28px;
+  font-size: 23px;
   margin-bottom: 0px;
 }
 .title-img img {
@@ -905,7 +908,9 @@ button#scrollToTopBtn {
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-
+button#scrollToTopBtn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
 button#scrollToTopBtn.show {
   display: block;
 }
@@ -1024,7 +1029,9 @@ textarea {
 .about-section-1,
 .about-section-2,
 .about-section-3,
-.about-section-4 {
+.about-section-4,
+.about-section-5 {
+  width: 100%;
   padding: 20px;
   color: #fff;
 }
@@ -1039,4 +1046,7 @@ textarea {
 }
 .about-section-4 {
   background-color: var(--btnColor);
+}
+.about-section-5 {
+  background-color: var(--darkBrown);
 }
