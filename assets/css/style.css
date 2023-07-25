@@ -852,11 +852,16 @@ body {
     float: none;
   }
   .footer {
-    padding: 153px 0px 50px 0px;
+    /* padding: 153px 0px 50px 0px; */
+    padding: 10px 20px;
   }
   .program-item {
     margin-bottom: 20px;
     cursor: pointer;
+  }
+  .footer-row div {
+    margin-top: 10px;
+    text-align: left;
   }
 }
 
@@ -1070,7 +1075,7 @@ textarea {
   font-size: 20px;
 }
 .recognition-1 div {
-  height: 320px;
+  height: 350px;
 }
 
 /* /////////  FAQs ///// */
