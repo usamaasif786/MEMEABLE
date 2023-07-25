@@ -613,6 +613,22 @@ body {
   display: flex;
   flex-direction: row;
 }
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact div {
+  border-radius: 10px;
+  margin: 20px;
+}
+.contact {
+  background-color: var(--navBar);
+  padding: 50px;
+}
+.recognition-1 div {
+  height: 350px;
+}
 /* responsive css start here */
 @media (max-width: 1024px) {
   .form-inline .searchbtn {
@@ -727,12 +743,30 @@ body {
   .container {
     max-width: 768px;
   }
-
+  .contact div {
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .contact {
+    background-color: var(--navBar);
+    padding: 15px;
+  }
   .footer-row {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recognition-1 div {
+    height: 180px;
+    margin-top: 10px;
+  }
+
   .about-img,
   .header-img {
     display: none;
@@ -997,18 +1031,11 @@ button#scrollToTopBtn.show {
 }
 /* /////////////  Contact  ///////// */
 
-.contact {
-  background-color: var(--navBar);
-  padding: 50px;
-}
 .contact i {
   font-size: 30px;
   padding: 15px;
 }
-.contact div {
-  border-radius: 10px;
-  margin: 20px;
-}
+
 .contact-1 {
   background-color: #fff;
 }
@@ -1093,9 +1120,6 @@ textarea {
 /* ////////  Memeable WhitePaper  ///// */
 .love p {
   font-size: 20px;
-}
-.recognition-1 div {
-  height: 350px;
 }
 
 /* /////////  FAQs ///// */
