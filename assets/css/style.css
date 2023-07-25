@@ -2,6 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 /* section home css start here */
 :root {
@@ -709,6 +710,17 @@ body {
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .about-img,
+  .header-img {
+    display: none;
+  }
+  .about-section-2nd {
+    display: flex;
+    flex-direction: column;
+  }
   .navbar {
     padding: 33px 15px 32px;
   }
