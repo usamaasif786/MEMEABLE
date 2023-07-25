@@ -1050,3 +1050,48 @@ textarea {
 .about-section-5 {
   background-color: var(--darkBrown);
 }
+
+/* ////////  Memeable WhitePaper  ///// */
+.love p {
+  font-size: 20px;
+}
+.recognition-1 div {
+  height: 320px;
+}
+
+/* /////////  FAQs ///// */
+
+.faq-container {
+  padding: 60px 0px;
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+.faq-container h2 {
+  color: var(--navBar);
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.faq-container p {
+  margin: 10px, 0;
+}
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer {
+  display: none;
+  padding-top: 10px;
+}
+
+.answer.show {
+  display: block;
+}

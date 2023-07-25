@@ -57,3 +57,43 @@ function scrollToTop() {
 
 // Event listener for scroll event
 window.addEventListener("scroll", checkScroll);
+
+//////////  For Google Sheet Contact  /////////////
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycby26580s2EXoV_Ox2Fzp6G4PX1CZAmkQOomYFxRDdm2Y8iAkKDcQ0Bav5C8x8BtBnZi/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 3000);
+      form.reset();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
+
+///////  FAQ /////////
+
+// Function to handle the click event on FAQ questions
+// function toggleAnswer(event) {
+//   const question = event.target;
+//   const answer = question.nextElementSibling;
+
+//   // Toggle the visibility of the answer by adding/removing the 'active' class
+//   answer.classList.toggle("active");
+// }
+
+// // Add click event listeners to all FAQ questions to handle clicks
+// const questions = document.querySelectorAll(".question");
+// questions.forEach((question) => {
+//   question.addEventListener("click", toggleAnswer);
+// });
+function toggleAnswer(id) {
+  const answerElement = document.getElementById(`answer${id}`);
+  answerElement.classList.toggle("show");
+}
