@@ -453,7 +453,7 @@ body {
 
 /* section clients css start here */
 .clients {
-  background: url(../img/banner-1.png);
+  /* background: url(../img/banner-1.png); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -461,7 +461,7 @@ body {
 }
 .clientslayer {
   /* background-color: #fcc3028f; */
-  background-color: #f8d7698f;
+  /* background-color: #f8d7698f; */
   /* height: 575px; */
   width: 100%;
   padding: 60px 0px;
@@ -474,12 +474,13 @@ body {
   margin-bottom: 45px;
 }
 .happy-clients h3 {
-  color: #ffffff;
+  color: black;
   font-size: 28px;
   margin-bottom: 15px;
 }
 .happy-clients h2 {
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: black;
   font-size: 28px;
   margin-bottom: 0px;
   font-weight: 700;
@@ -501,17 +502,22 @@ body {
 
 .about h3 {
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   margin-bottom: 33px;
-  color: var(--navBar);
+  /* color: var(--navBar); */
+}
+.about p {
+  color: #fff;
+  font-weight: 200;
 }
 .about ul {
   padding: 0px;
 }
 .about ul li {
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  /* font-size: 10px; */
 }
 .about ul li a:hover {
   color: var(--navBar);
@@ -520,7 +526,7 @@ body {
 
 .about ul li a {
   color: #fff;
-  font-size: 22px;
+  font-size: 15px;
   text-decoration: none;
   display: inline-block;
 }
@@ -598,7 +604,15 @@ body {
   color: #343434;
 }
 /* section footer css end here */
-
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about-section-2nd {
+  display: flex;
+  flex-direction: row;
+}
 /* responsive css start here */
 @media (max-width: 1024px) {
   .form-inline .searchbtn {
@@ -712,6 +726,12 @@ body {
 @media (max-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .about-img,
   .header-img {
@@ -1094,8 +1114,11 @@ textarea {
 .faq-container p {
   margin: 10px, 0;
 }
+.faq-container hr {
+  margin: 1px;
+}
 .faq-item {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   padding: 10px;
 }
 
