@@ -1196,6 +1196,10 @@ textarea {
   .title.new {
     padding: 20px 0;
   }
+  .contact h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
   .about h3 {
     font-size: 21px;
     margin-bottom: 15px;
@@ -1209,7 +1213,7 @@ textarea {
     width: 60%;
   }
 }
-
+/* /// For Remove the White space on Right Side On Mobile Screen //// */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (-o-min-device-pixel-ratio: 3/2),
   only screen and (min--moz-device-pixel-ratio: 1.5),
