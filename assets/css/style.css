@@ -142,13 +142,16 @@ body {
   -o-transition: background 0.5s linear;
   transition: background 0.5s linear;
 }
+.themebtn {
+  display: none;
+}
 .themebtn,
 .withoutbtn {
   text-decoration: none;
-  padding: 16px 32px;
+  padding: 8px 16px;
   border-radius: 7px;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 600;
 }
 .carousel-item .col-md-7 .withoutbtn {
@@ -982,7 +985,7 @@ textarea {
 
 @media (max-width: 768px) {
   .home {
-    height: 80vh;
+    height: 90vh;
   }
   .about-section h2 {
     font-size: 30px;
@@ -992,6 +995,10 @@ textarea {
     font-size: 30px;
     margin-bottom: 50px;
   } */
+  .themebtn {
+    display: block;
+    /* margin-top: 0px; */
+  }
   .container {
     max-width: 768px;
   }
@@ -1202,9 +1209,6 @@ textarea {
   .footer-img {
     width: 60%;
   }
-  /* .title-heading h2 {
-    margin-bottom: 0;
-  } */
 }
 
 /* responsive css end here */
