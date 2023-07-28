@@ -79,20 +79,6 @@ form.addEventListener("submit", (e) => {
 
 ///////  FAQ /////////
 
-// Function to handle the click event on FAQ questions
-// function toggleAnswer(event) {
-//   const question = event.target;
-//   const answer = question.nextElementSibling;
-
-//   // Toggle the visibility of the answer by adding/removing the 'active' class
-//   answer.classList.toggle("active");
-// }
-
-// // Add click event listeners to all FAQ questions to handle clicks
-// const questions = document.querySelectorAll(".question");
-// questions.forEach((question) => {
-//   question.addEventListener("click", toggleAnswer);
-// });
 function toggleAnswer(id) {
   const answerElement = document.getElementById(`answer${id}`);
   answerElement.classList.toggle("show");
